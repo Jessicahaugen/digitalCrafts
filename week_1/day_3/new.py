@@ -1,12 +1,13 @@
 #Variable
 #  nameOfVar =  assignmenedValueToVariable 
 # integer
+dirPlusTeacher = 4
 classSize = 23 
 # string
 greeting = "Hello World"
 # float = 2.323
 # Boolean === True or False, Truthy or Falsy 
-sumOfNumbers = 1+1  
+sumOfClass =  dirPlusTeacher + classSize  
 varName = True 
 # List or Array = sequence of valuesc inside [ ] 
 somethingToCall = ["hello", 23, True]
@@ -21,3 +22,4 @@ print("Jessica, Washougal")
 print(classSize)
 print(somethingToCall)
 print(somethingToCall2)
+print("the size of class is", sumOfClass)
