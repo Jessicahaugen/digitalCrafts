@@ -10,9 +10,9 @@ sumOfNumbers = 1+1
 varName = True 
 # List or Array = sequence of valuesc inside [ ] 
 # Nested List = [[list ], inside of a list"]
-# DIctionary (in python) Object (in Javascript)  = sequence of labled values {key: values}
+# Dictionary (in python) Object (in Javascript)  = sequence of labled values {key: values}
 # ex. {favorite color : red}
 # paramaters inside funcitons () 
 
 print(greeting)
-
+print("Jessica, Washougal")
