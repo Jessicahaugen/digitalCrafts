@@ -9,11 +9,15 @@ greeting = "Hello World"
 sumOfNumbers = 1+1  
 varName = True 
 # List or Array = sequence of valuesc inside [ ] 
+somethingToCall = ["hello", 23, True]
 # Nested List = [[list ], inside of a list"]
 # Dictionary (in python) Object (in Javascript)  = sequence of labled values {key: values}
 # ex. {favorite color : red}
+somethingToCall2 = {"hello python world" : 23, "we are students" : 23.5}
 # paramaters inside funcitons () 
 
 print(greeting)
 print("Jessica, Washougal")
 print(classSize)
+print(somethingToCall)
+print(somethingToCall2)
