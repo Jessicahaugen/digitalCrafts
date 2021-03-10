@@ -16,3 +16,4 @@ varName = True
 
 print(greeting)
 print("Jessica, Washougal")
+print(classSize)
