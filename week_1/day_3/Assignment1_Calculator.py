@@ -8,7 +8,7 @@ finalAnswer = None
 
 if opperand == "+":
     # add 2 numbers
-# I coulf use functions declared above instead but instead bypassing using a variable 
+# I could use functions declared above instead but instead bypassing using a variable 
 # def addition(firstNum, secondNum): 
     finalAnswer = (firstinput + secondinput)
     #subtract 2 numbers
@@ -20,7 +20,7 @@ elif opperand == "*":   #multiply 2 nums
     finalAnswer = (firstinput * secondinput)
 #         #divide 2 nums 
 elif opperand == "/":
-    finalAnswer = (firstinput * secondinput)
+    finalAnswer = (firstinput / secondinput)
 # else:
     finalAnswer =  print("enter a valid opperand")
 
