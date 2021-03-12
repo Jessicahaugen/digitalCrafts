@@ -4,22 +4,22 @@
 # For numbers which are multiples of both three and five print "FizzBuzz".
 
 # #define function
-# def printFizzBUzz(): 
-#     #loop through all nums
-#     for num in range(101):
-#         if num % 3 == 0 and num % 5 == 0:
-#             print("fizzbuzz")
-#             continue
-#         if num % 3 == 0: 
-#             print("fizz")
-#             continue
-#         if num % 5 == 0:
-#             print ("buzz")
-#             continue
+def printFizzBUzz(): 
+    #loop through all nums
+    for num in range(101):
+        if num % 3 == 0 and num % 5 == 0:
+            print("fizzbuzz")
+            continue
+        if num % 3 == 0: 
+            print("fizz")
+            continue
+        if num % 5 == 0:
+            print ("buzz")
+            continue
     
-#         print(num)
+        print(num)
         
-# printFizzBUzz()
+printFizzBUzz()
 
 
 #2. Sum of All Multiples of 3 or 5 below 1000
@@ -27,15 +27,15 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 
-# def sumOf3or5():
+def sumOf3or5():
 
-#     count = 0
-#     for num in range(1000): 
-#         if num % 3 == 0 or num % 5== 0:
-#             count += num 
+    count = 0
+    for num in range(1000): 
+        if num % 3 == 0 or num % 5== 0:
+            count += num 
         
-#     print(count)
-# sumOf3or5()
+    print(count)
+sumOf3or5()
             
 
 #Fibonacci Sequence
