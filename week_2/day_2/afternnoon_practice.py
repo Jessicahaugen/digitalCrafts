@@ -27,7 +27,7 @@ class temp_user:
         self.name = name 
         self.type = "temporary"
     
-    def printtemp(self):
+    def printtemp(self,):
         print(self.name)
         print(self.type)
 
@@ -40,14 +40,16 @@ def user_name():
     enter_age = input("what is your age?")
     user_type = input("are you a temp user or a user?")
     
-    if  user_type == "temp": 
+    if  user_type == "user": 
         user = user_class(enter_name,enter_age)
+        user.printuser()
         
-    elif user_type =="user": 
-        user ==  temp_user(enter_name)
-        
+    elif user_type == "temp":
+        user == temp_user(enter_name)
+       
     else : 
-        pass
+        print("invalid response")
+    
 
  
 user_name()
@@ -71,39 +73,39 @@ user_name()
 # message = "can you tell me about your building?"
 
 
-class building: 
-    def __init__(self, height, capacity,sqft):
-        self.height = height 
-        self.capacity = capacity
-        self.sqft = sqft
-        self.type = "commercial"
+# class building: 
+#     def __init__(self, height, capacity,sqft):
+#         self.height = height 
+#         self.capacity = capacity
+#         self.sqft = sqft
+#         self.type = "commercial"
 
-    def printb(self):
-        print(self.height)
-        print(self.capacity)
-        print(self.sqft)
-        print(self.type)
+#     def printb(self):
+#         print(self.height)
+#         print(self.capacity)
+#         print(self.sqft)
+#         print(self.type)
 
 
  
-def new_building():
+# def new_building():
 
-    newbuild = ''
-    message = print("can you tell me about your building?")
-    building_height = input("what is your building height?")
-    building_capacity = input("how many people can your building hold?")
-    build_sqft = input("what is the sqft of your building?")
+#     newbuild = ''
+#     message = print("can you tell me about your building?")
+#     building_height = input("what is your building height?")
+#     building_capacity = input("how many people can your building hold?")
+#     build_sqft = input("what is the sqft of your building?")
 
     
-    newbuild = building(building_height,building_capacity,build_sqft)
-    newbuild.printb()
-    #building.printb()
+#     newbuild = building(building_height,building_capacity,build_sqft)
+#     newbuild.printb()
+#     #building.printb()
 
 
-count = 0
-while count < 5: 
-    new_building()
-    count += 1
+# count = 0
+# while count < 5: 
+#     new_building()
+#     count += 1
 
 
 
