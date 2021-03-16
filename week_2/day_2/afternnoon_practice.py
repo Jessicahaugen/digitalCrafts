@@ -7,50 +7,50 @@
 # The user will have a choice to either be a temp user or a User
 
 
-# class user_class:
-#     def __init__(self,name,age): 
-#         self.name = name 
-#         self.age = age
-#         self.type = "permananent"
+class user_class:
+    def __init__(self,name,age): 
+        self.name = name 
+        self.age = age
+        self.type = "permananent"
     
-#     def printuser(self):
-#         print(self.name)
-#         print(self.age)
-#         print(self.type)
+    def printuser(self):
+        print(self.name)
+        print(self.age)
+        print(self.type)
 
 
-
-    
-
-# class temp_user: 
-#     def __init__(self, name):
-#         self.name = name 
-#         self.type = "temporary"
-    
-#     def printtemp(self):
-#         print(self.name)
-#         print(self.type)
 
     
 
-
-# def user_name(): 
-#     user = ''
-#     enter_name = input(" what is you name?")
-#     enter_age = input("what is your age?")
-#     user_type = input("are you a temp user or a user?")
+class temp_user: 
+    def __init__(self, name):
+        self.name = name 
+        self.type = "temporary"
     
-#     if  user_type == "temp": 
-#         user = user_class(enter_name,enter_age)
+    def printtemp(self):
+        print(self.name)
+        print(self.type)
+
+    
+
+
+def user_name(): 
+    user = ''
+    enter_name = input(" what is you name?")
+    enter_age = input("what is your age?")
+    user_type = input("are you a temp user or a user?")
+    
+    if  user_type == "temp": 
+        user = user_class(enter_name,enter_age)
         
-#     elif user_type =="user": 
-#         user ==  temp_user(enter_name)
+    elif user_type =="user": 
+        user ==  temp_user(enter_name)
         
-#     else : 
-#         pass
+    else : 
+        pass
 
-#    # print(f" your username is {enter_name} and your age is {enter_age} and you are a {user_type}")
-# user_name()
+ 
+user_name()
 
 
 # Create a building class
@@ -98,17 +98,6 @@ def new_building():
     newbuild = building(building_height,building_capacity,build_sqft)
     newbuild.printb()
     #building.printb()
-
-    
-    
-    # building_type = input("is your building (c) commercial or (r) residential")
-
-    # if building_type = "c"
-    #     newbuild = building(building_height,building_capacity,build_sqft,building_type)
-    # elif building_type = "r"
-    # newbuild = building2(building_height,building_capacity,build_sqft,building_type):
-    # else: 
-    #     pass
 
 
 count = 0
