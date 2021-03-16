@@ -70,42 +70,42 @@ user_name()
 # print out the specs of the buildilng everytime a building is made
 # print statement needs to be a method
 
-# message = "can you tell me about your building?"
+message = "can you tell me about your building?"
 
 
-# class building: 
-#     def __init__(self, height, capacity,sqft):
-#         self.height = height 
-#         self.capacity = capacity
-#         self.sqft = sqft
-#         self.type = "commercial"
+class building: 
+    def __init__(self, height, capacity,sqft):
+        self.height = height 
+        self.capacity = capacity
+        self.sqft = sqft
+        self.type = "commercial"
 
-#     def printb(self):
-#         print(self.height)
-#         print(self.capacity)
-#         print(self.sqft)
-#         print(self.type)
+    def printb(self):
+        print(self.height)
+        print(self.capacity)
+        print(self.sqft)
+        print(self.type)
 
 
  
-# def new_building():
+def new_building():
 
-#     newbuild = ''
-#     message = print("can you tell me about your building?")
-#     building_height = input("what is your building height?")
-#     building_capacity = input("how many people can your building hold?")
-#     build_sqft = input("what is the sqft of your building?")
+    newbuild = ''
+    message = print("can you tell me about your building?")
+    building_height = input("what is your building height?")
+    building_capacity = input("how many people can your building hold?")
+    build_sqft = input("what is the sqft of your building?")
 
     
-#     newbuild = building(building_height,building_capacity,build_sqft)
-#     newbuild.printb()
-#     #building.printb()
+    newbuild = building(building_height,building_capacity,build_sqft)
+    newbuild.printb()
+    #building.printb()
 
 
-# count = 0
-# while count < 5: 
-#     new_building()
-#     count += 1
+count = 0
+while count < 5: 
+    new_building()
+    count += 1
 
 
 
