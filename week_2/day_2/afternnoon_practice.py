@@ -27,7 +27,7 @@ class temp_user:
         self.name = name 
         self.type = "temporary"
     
-    def printtemp(self,):
+    def printtemp(self):
         print(self.name)
         print(self.type)
 
@@ -46,6 +46,7 @@ def user_name():
         
     elif user_type == "temp":
         user == temp_user(enter_name)
+        user.printtemp()
        
     else : 
         print("invalid response")
