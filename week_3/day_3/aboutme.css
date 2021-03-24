@@ -1,0 +1,72 @@
+body {
+    display: block;
+    background: url(assets/IMG_2530-EFFECTS.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+
+
+  
+}
+
+.header { 
+    display: flex;
+    justify-content: center;
+    background-size: cover; 
+    background-color:rgb(243, 243, 243,0.8);
+    color: rgb(22, 20, 20);
+    height:45px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: larger;
+    
+}
+       
+    
+       
+
+.paragraph {
+    display: flex;
+    background-color:rgba(0,0,0,0.4);
+    background-size: cover;
+    /* width: 100%; */
+    align-items: center;
+    padding: 50px 50px;
+    text-align:center;
+    height:500px;
+    margin: 5px;
+    color: whitesmoke;
+    border-radius: 8px;
+}
+
+
+#title {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10;
+    text-align: left;
+    font-style: italic;
+    font-weight: 32;
+
+}
+
+.footer { 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    background-color:whitesmoke;
+    height: 45px;
+    border-radius: 8px;
+    color: whitesmoke;
+    
+}
+
+   
+
+   
+a {
+    color: black;
+   
+       } 

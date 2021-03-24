@@ -1,0 +1,22 @@
+.navbar {
+ /* height:40px; */
+    background-color: lavender;
+    overflow: hidden;
+}
+
+.navbar a { 
+    display:block;
+    text-align: center;
+    float: left;
+    padding: 10px 15px;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 650px) {
+    .navbar a { 
+        float: none;
+        width: 100%;
+
+    }
+}
