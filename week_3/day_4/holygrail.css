@@ -1,0 +1,129 @@
+/* .main {
+  display: grid;
+  height: 300vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 0.5fr);
+  grid-template-areas:
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content1 content1"
+    "footer footer footer";
+
+  grid-gap: 5px;
+  row-gap: 10px;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: orchid;
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+#sidebar {
+  grid-area: sidebar;
+  background-color: rgb(214, 165, 213);
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+#content1 {
+  grid-area: content1;
+  background-color: rgb(187, 159, 186);
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+footer {
+  grid-area: footer;
+  background-color: plum;
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+} */
+
+/* .main {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 0.3fr, 1fr, 2fr, 0.3fr;
+  grid-template-areas:
+    "sidebar header header"
+    "sidebar content1 content1"
+    "sidebar content1 content1"
+    "sidebar footer footer";
+
+  grid-gap: 5px;
+  row-gap: 10px;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: orchid;
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+#sidebar {
+  grid-area: sidebar;
+  background-color: rgb(214, 165, 213);
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+#content1 {
+  grid-area: content1;
+  background-color: rgb(187, 159, 186);
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+footer {
+  grid-area: footer;
+  background-color: plum;
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+} */
+
+.main {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 0.3fr, 1fr, 2fr, 0.3fr;
+  grid-template-areas:
+    "sidebar header header ad"
+    "sidebar content1 content1 ad"
+    "sidebar content1 content1 ad"
+    "sidebar footer footer footer";
+
+  grid-gap: 5px;
+  row-gap: 10px;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: orchid;
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+#sidebar {
+  grid-area: sidebar;
+  background-color: rgb(214, 165, 213);
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+#content1 {
+  grid-area: content1;
+  background-color: rgb(187, 159, 186);
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+
+#ad {
+  grid-area: ad;
+  background-color: rgb(196, 144, 196);
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
+footer {
+  grid-area: footer;
+  background-color: plum;
+  border-radius: var(--primary-radius);
+  padding-top: var(--primary-padding);
+}
