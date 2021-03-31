@@ -42,7 +42,7 @@
         const bill = Number(document.querySelector("#bill").value)
         const tipcalc = Number(document.querySelector("#tip").value)
         const calculateTip =  Math.round(10*(bill*tipcalc/10))/ 100
-        const calculateTotal = bill + calculateTip
+        const calculateTotal = bill + Math.round(10*(bill*tipcalc/10))/ 100
         const showCalc = document.querySelector(".total")
         showCalc.innerText = calculateTotal  
         const tipList = document.querySelector("#tips")
