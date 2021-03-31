@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-containder">
+      <h1>Dom Practice</h1>
+      <label for="number"></label>
+      <input onchange="displayVal" type="text" name="number" />
+      <!-- <button onclick = class= "button" >Submit</button> -->
+      <h3>Your number is :</h3>
+      <p class="display number"></p>
+    </div>
+  </body>
+  <script>
+    function displayVal() {
+      const number = document.querySelector(".input").value;
+      console.log(number);
+    }
+  </script>
+</html>

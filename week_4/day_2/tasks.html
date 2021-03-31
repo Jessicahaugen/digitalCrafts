@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body id="main"></body>
+
+  <script>
+    const main = document.querySelector("#main");
+    const mainDiv = document.createElement("div");
+    mainDiv.className = "main-class";
+
+    const ulist = document.createElement("ul");
+    console.log(ulist);
+    ulist.innerText = "List of colors";
+
+    const item1 = document.createElement("li");
+    item1.innerText = "red";
+
+    const item2 = document.createElement("li");
+    item2.innerText = "orange";
+
+    const item3 = document.createElement("li");
+    item3.innerText = "yellow";
+
+    const item4 = document.createElement("li");
+    item4.innerText = "green";
+
+    const item5 = document.createElement("li");
+    item5.innerText = "blue";
+
+    ulist.append(item1, item2, item3, item4, item5);
+
+    console.log(ulist);
+
+    const input = document.createElement("input");
+
+    const radio = document.createElement("input");
+    radio.setAttribute("type", "radio");
+    mainDiv.append(ulist, input, radio);
+    main.append(mainDiv);
+  </script>
+</html>
+
+//
+<!-- create a div with a class name of main-container
+// (edited)
+
+// 9:01
+// create an unordered list with 5 list items on it
+// 9:01
+//  all the list items are created using javascript
+// 9:02
+// create an input field
+// 9:02
+// create a radio input field using javascript
+// New
+// 9:06
+// append all create stuff to the div -->

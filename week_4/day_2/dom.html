@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main" header>
+      <h1 id="header">DOM HEADER</h1>
+      <ul id="list">
+        <li class="listitem">USER</li>
+        <li class="listitem">ABOUT</li>
+        <li class="listitem">CHAT</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const heading = document.getElementById("header");
+    console.log(heading);
+    const list = document.getElementById("list");
+    console.log("list");
+    const listitem = document.getElementsByClassName("listitem");
+    console.log(listitem);
+  </script>
+</html>

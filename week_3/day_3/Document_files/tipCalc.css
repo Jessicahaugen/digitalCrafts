@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(to right,#2b3a90,#367ba1);
+  height:100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  );
+}
+.formContainer {
+  font-family: sans-serif;
+  color: rgb(169, 178, 218);
+ 
+
+}
+button {
+  background-color: rgb(208, 224, 224);
+  border-radius: 4px;
+  border-color: azure;
+  font-family: sans-serif;
+  color: #050f49;
+  height: 40px;
+  width: 120px;
+}
