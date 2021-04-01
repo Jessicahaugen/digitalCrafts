@@ -47,7 +47,8 @@
         showCalc.innerText = calculateTotal  
         const tipList = document.querySelector("#tips")
         const totalTips = document.createElement("li")
-        totalTips.append(calculateTip)
+        totalTips.innerText = calculateTip
+        // totalTips.append(calculateTip) either method works
         tipList.append(totalTips)
           
     
