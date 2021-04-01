@@ -5,54 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="tipCalc.css" />
-    <title>Document</title>
+    <title>Tip Calculator</title>
   </head>
   <body>
     <div class="formContainer">
-        <table cellpadding='5px' cellspacing='7px'>
-    <h2>Tip Calculator</h2>
-    <th></th>
-    <tr>
+      <form class = "mainform">
+        <fieldset>
+          <table cellpadding='5px' cellspacing='7px'>
+        <h2>Tip Calculator</h2>
+        <th></th>
+        <tr>
         <td>Bill Amount (in Dollars): </td>
         <td><span>$ <input type='text' id='bill' placeholder='ie. 50'></span></td>
-    </tr>
-    <tr>
-        <td>Tip Amount (in %): </td>
-        <td>
-            <span>% <input type='text' id='tip' placeholder='ie. 15'></span>
+        </tr>
+        <tr>
+          <td>Tip Amount (in %): </td>
+          <td>
+              <span>% <input type='text' id='tip' placeholder='ie. 15'></span>
+          </td>
+        </tr>
+        <td></td>
+        <tr>
+          <td></span></h3>
         </td>
-    </tr>
-    <td></td>
-    <tr>
-        <td></span></h3>
-        </td>
-    </tr>
-        </table>
-    <button onclick = "billCalc()" type='button'>Calculate Total</button>
+        </tr>
+          </table>
+        
+    <button id="button" type='button'>Calculate Total</button>
     <h3>The total amount with tip is: $ <span class="total"></span>
 
      <ul id = "tips"> Current Tip Cycle: </ul>
-
+      </fieldset>
+      </form>
     
     </div>
 
     </body>
   <script>
-      function billCalc(){ 
-        const bill = Number(document.querySelector("#bill").value)
-        const tipcalc = Number(document.querySelector("#tip").value)
-        const calculateTip =  Math.round(10*(bill*tipcalc/10))/ 100
-        const calculateTotal = bill + Math.round(10*(bill*tipcalc/10))/ 100
-        const showCalc = document.querySelector(".total")
-        showCalc.innerText = calculateTotal  
-        const tipList = document.querySelector("#tips")
-        const totalTips = document.createElement("li")
-        totalTips.innerText = calculateTip
+
+
+    function billCalc(){ 
+      const bill = Number(document.querySelector("#bill").value)
+      const tipcalc = Number(document.querySelector("#tip").value)
+      const calculateTip =  Math.round(10*(bill*tipcalc/10))/ 100
+      const calculateTotal = bill + Math.round(10*(bill*tipcalc/10))/ 100
+      const showCalc = document.querySelector(".total")
+      showCalc.innerText = calculateTotal  
+      const tipList = document.querySelector("#tips")
+      const totalTips = document.createElement("li")
+      totalTips.innerText = calculateTip
         // totalTips.append(calculateTip) either method works
-        tipList.append(totalTips)
-          
+      tipList.append(totalTips)
+    }    
+    
+    // const form = document.querySelector(".mainform")
+
+    const validateNum = (num) => {
+      myRegex = /^[0-9]+$/
+      return myRegex.test(num)
     
     }
+    const button = document.querySelector("#button")
+
+    button.addEventListener("click", (event) => {
+      const bill = document.querySelector("#bill")
+      if (!validateNum(bill.value)) {
+        event.preventDefault()
+        alert("Please enter in a valid name that doesn't contain numbers")
+    }
+    
+    });
+    button.addEventListener("click", (event) => {
+      const tip = document.querySelector("#tip")
+      if (!validateNum(tip.value)) {
+        event.preventDefault()
+        alert("Please enter in a valid name that doesn't contain numbers")
+    }
+    
+    });
 
   </script>
 

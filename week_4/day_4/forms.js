@@ -3,7 +3,7 @@ const form = document.querySelector("form")
 const validateName = (name) => {
     console.log(`your name is ${name}`)
     myRegex = /[A-Za-Z] +/
-    retunr myRegex.test(name);
+    return myRegex.test(name);
 
 }
 form.addEventListener("submit", (event) => {
