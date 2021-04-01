@@ -7,8 +7,7 @@ const validateName = (name) => {
 
 }
 form.addEventListener("submit", (event) => {
-    const inputField = document.querySelector("#name");
-    event.preventDefault()  
+    const inputField = document.querySelector("#name"); 
     if (!validateName(name.value)){
     event.preventDefault()
    }
@@ -19,5 +18,8 @@ form.addEventListener("submit", (event) => {
     if (!validateName(textInput.value)) {
       event.preventDefault();
       alert("Please enter in a valid name that doesn't contain letters");
+    }
+   
+
     }
   });

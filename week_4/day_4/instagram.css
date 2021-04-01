@@ -1,4 +1,9 @@
 body {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
   background-image: linear-gradient(
     to top,
     #fbf9fb,
@@ -8,6 +13,51 @@ body {
     #ffffff
   );
 }
+
+form {
+  padding: auto;
+  height: 750px;
+  width: 350px;
+  border-color: rgb(117, 77, 77);
+  border-radius: 5px;
+}
 h1 {
   font-family: "Pacifico", cursive;
+  text-align: center;
+}
+.facebook {
+  align-items: center;
+  text-align: center;
+  background-color: #0095f6;
+  color: white;
+  height: 40px;
+  width: 320px;
+  margin: 5px;
+  border-radius: 10px;
+  border-color: #0095f6;
+  font-family: sans-serif;
+  font-size: medium;
+  padding: 5px;
+}
+#submit {
+  align-items: center;
+  text-align: center;
+  background-color: #0095f6;
+  color: white;
+  height: 40px;
+  width: 320px;
+  margin: 5px;
+  border-radius: 10px;
+  border-color: #0095f6;
+  font-family: sans-serif;
+  font-size: medium;
+  padding: 5px;
+}
+input {
+  height: 40px;
+  width: 320px;
+  margin: 5px;
+}
+p {
+  text-align: center;
 }
