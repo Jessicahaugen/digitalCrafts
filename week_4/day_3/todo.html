@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>What would you like to accomplish today?</h1>
+    </div>
+    <h1>Jessica's Task List</h1>
+    <ul class="main-list"></ul>
+</body>
+</html>
+ <script>
+    
+    const callInput = document.querySelector(".main-container") 
+    const makeInput = document.createElement("INPUT")
+    makeInput.placeholder = "Enter Task Here"
+    makeInput.id =  "input1" 
+    callInput.append(makeInput)
+     
+    const submitButton = document.createElement("BUTTON")
+    submitButton.innerText = "Submit"
+    callInput.append(submitButton)
+    
+    function mainFunc(){
+        // const callInput = document.querySelector(".main-container")
+        const toDo = document.querySelector(".main-list")
+        const grabInput = document.querySelector("#input1").value
+        
+        const listItem = document.createElement("li")
+        listItem.innerText = grabInput
+        toDo.append(listItem)
+
+    } 
+    function checkBox(){
+        const toDo = document.querySelector(".main-list")
+        const checkBox = document.createElement("INPUT")
+        checkBox.type = "checkbox"
+        toDo.append(checkBox)
+
+    }
+
+     submitButton.addEventListener('click', function(e) {
+         mainFunc()
+         checkBox()
+     });
+
+</script>
+</html>
