@@ -1,0 +1,13 @@
+body {
+  background-image: linear-gradient(
+    to top,
+    #fbf9fb,
+    #fcfbfc,
+    #fdfcfd,
+    #fefefe,
+    #ffffff
+  );
+}
+h1 {
+  font-family: "Pacifico", cursive;
+}
