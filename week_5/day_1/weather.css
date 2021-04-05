@@ -1,0 +1,49 @@
+body {
+  margin: auto;
+  background-image: url("https://images.unsplash.com/photo-1552929635-1d39dd7dcb33?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80");
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tajawal", sans-serif;
+  margin: 10% auto;
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+}
+
+button {
+  font-family: "Tajawal", sans-serif;
+  font-size: x-large;
+  background-color: black;
+  color: white;
+  height: 20%;
+  width: 25%;
+  border-radius: 5%;
+  margin: 50px;
+  padding: 5px;
+}
+
+input {
+  border-radius: 5px;
+  border-color: turquoise;
+  height: 45px;
+  width: 45%;
+  margin: 50px;
+}
+
+label {
+  font-size: 75px;
+  margin-bottom: 8%;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 50px;
+}
