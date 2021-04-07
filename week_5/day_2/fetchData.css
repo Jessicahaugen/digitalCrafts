@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: large;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: xx-large;
+  height: 75%;
+  width: 100%;
+}
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 250px;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 10px;
+  border: solid;
+  border-color: #78b3db;
+  overflow-wrap: break-word;
+  box-shadow: yellow;
+}
+#card:hover {
+  transition-delay: 5ms;
+  /* height: 150%; */
+  width: 25%;
+  background-color: rgb(220, 253, 80, 0.6);
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+button {
+  padding: 0.35em 1.2em;
+  background-color: transparent;
+  border: 0.1em solid #78b3db;
+  margin: 2em;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: x-large;
+  color: #78b3db;
+  text-align: center;
+  transition: all 0.2s;
+  height: 5rem;
+  width: 25rem;
+}
+button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#switch {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.bouncingball {
+  display: flex;
+  justify-content: flex-end;
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  animation: tennis 3s linear infinite alternate;
+}
+@keyframes tennis {
+  0% {
+    top: 0vh;
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  25% {
+    top: 100vh;
+    left: 200px;
+    transform: rotate(360deg);
+  }
+  50% {
+    top: 0vh;
+    left: 400px;
+    transform: rotate(0deg);
+  }
+  75% {
+    top: 100vh;
+    left: 600px;
+    transform: rotate(360deg);
+  }
+  100% {
+    top: 0vh;
+    left: 900px;
+    transform: rotate(0deg);
+  }
+}
+/* image {
+  justify-content: flex-start;
+} */
