@@ -1,4 +1,3 @@
-const accessMain = document.querySelector(".main");
 const buttonPPL = document.querySelector("#btnPeople");
 const buttonPLC = document.querySelector("#btnPlaces");
 accessCardDiv = document.querySelector(".card-container");
@@ -11,7 +10,6 @@ const getPeople = async () => {
     console.log(convertPPL);
     accessCardDiv.innerHTML = '';
    
- 
     for (let person of convertPPL.data) { 
         let container = document.createElement("div");
         container.id = "card";
@@ -34,9 +32,7 @@ const getPlaces = async () => {
     let retrievePLC = await fetch("https://fakerapi.it/api/v1/images?_quantity=31_type=people");
     let convertPLC = await retrievePLC.json();
     accessCardDiv.innerHTML = '';
-    
-   
-   
+     
     for(let place of convertPLC.data) {
         let container = document.createElement("div");
         container.id = "card";
@@ -47,30 +43,21 @@ const getPlaces = async () => {
         let archImage = document.createElement("img");
         archImage.id="userImage";
         archImage.height = "170";
-        archImage.width = "190";
+        archImage.width = "190";+
         archImage.src = place.url;
         container.append(archImage,newPlace,description);
         accessCardDiv.append(container);
-
     }
 }
-
-
-
 buttonPPL.addEventListener('click', function() {
     getPeople();
     intro.innerHTML = 'people';
     intro.append(buttonPLC);
     dog.innerHTML ="";
-    
-
 });
-
 buttonPLC.addEventListener('click', function() {
     getPlaces();
     intro.innerHTML = "Places";
     intro.append(buttonPPL);
     dog.innerHTML ="";
 });
-
-
