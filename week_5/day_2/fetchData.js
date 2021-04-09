@@ -43,7 +43,7 @@ const getPlaces = async () => {
         let archImage = document.createElement("img");
         archImage.id="userImage";
         archImage.height = "170";
-        archImage.width = "190";+
+        archImage.width = "190";
         archImage.src = place.url;
         container.append(archImage,newPlace,description);
         accessCardDiv.append(container);
