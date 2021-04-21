@@ -1,4 +1,4 @@
-const password = require("./pass.js");
+const password = require("./pass1.js");
 const Pool = require("pg").Pool
 const pool = new Pool({
     user:"postgres",
