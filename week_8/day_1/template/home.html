@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" action="/recipe">
+      <h1>Add New Recipe</h1>
+      <label for="recipe">Name:</label>
+      <input name="recipe" type="text" />
+      <label for="vegan">Vegan:</label>
+      <input name="vegan" type="text" />
+      <input type="submit" />
+    </form>
+
+    <h1>Current Cookbook</h1>
+    <div>
+      <p>RECIPES</p>
+      ${recipes.map(recipe => `
+      <dt>Name: ${recipe.recipe}</dt>
+      <dt>Vegan: ${recipe.vegan}</dt>
+
+      <form action="/delete/${recipe.cookbook_id}" method="POST">
+        <button type="submit">DELETE</button>
+      </form>
+      <hr />
+      ` ).join(" ")}
+    </div>
+  </body>
+</html>
