@@ -59,7 +59,7 @@ app.post("/update/:id", async (req, res) => {
         "UPDATE recipes SET (recipe,vegan) = ($1,$2) WHERE cookbook_id = $3",
         [recipe,vegan,id]
     );
-      res.redirect(ROOT_PAGE);
+      res.send("updated");
     } catch (err) {
       console.error(err.message);
     }
