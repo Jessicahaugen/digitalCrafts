@@ -113,6 +113,7 @@ app.delete('/users/:id', async (req, res) => {
             id
         }
     });
+
     res.json(deletedUser);
 });
 
