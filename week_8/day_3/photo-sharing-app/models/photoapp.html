@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <body>
+        <form method="post" action="/users/photos">
+          <h1>Add New User</h1>
+          <label for="fname">First Name:</label>
+          <input name="fname" type="text" />
+          <label for="lname">Last Name:</label>
+          <input name="lname" type="text" />
+          <label for="email">Email</label>
+          <input name="email" type="text">
+          <input type="submit"/>
+        </form>
+    
+        <h1>PHOTO APP</h1>
+        ${deletedUser.map(User => `
+            <div>
+                <h2>First Name</h2>
+                <p>${User.firstName}</p>
+                <h2>Last Name</h2>
+                <p>${User.lastName}</p>
+                <h2>Email</h2>
+                <p>${User.email}</p>
+                <form action=/users/${User.id} method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+            `).join("")}
+
+  </body>
+</html>

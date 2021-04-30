@@ -1,10 +1,17 @@
 const express = require("express");
+const cors =require("cors");
 const app = express();
 const Sequelize = require('sequelize');
 const PORT = 3008;
 const { User, Photo } = require('./models');
+const es6Renderer = require("express-es6-template-engine");
+
 
 app.use(express.json())
+app.use(express.json());
+app.use(cors());
+app.engine("html", es6Renderer);
+app.use(express.urlencoded({ extended: true }));
 
 
 
@@ -14,7 +21,18 @@ app.get('/users/photos', async (req, res) => {
             model: Photo
         }]
     });
-    res.json(users);
+    res.render("photoapp", {
+        locals: 
+        {
+            firstName:users,
+            lastName:users,
+            email:users,
+            url:users,
+            userId:users,
+            title:"new user"
+
+        }
+    })
 });
 
 app.get('/photos/users', async (req, res) => {
@@ -113,7 +131,6 @@ app.delete('/users/:id', async (req, res) => {
             id
         }
     });
-
     res.json(deletedUser);
 });
 
