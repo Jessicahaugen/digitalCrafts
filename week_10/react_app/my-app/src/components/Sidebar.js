@@ -7,11 +7,11 @@ class Sidebar extends Component {
             <div className="Sidebar">
                 <nav>
                 <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
-                    <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
+                    <li><i class="fab fa-facebook-f"></i><span>Facebook</span></li>
+                    <li><i class="fab fa-twitter"></i><span>Twitter</span></li>
+                    <li><i class="fab fa-instagram"></i><span>Instagram</span></li>
+                    <li><i class="fab fa-linkedin-in"></i><span>Linkedin</span></li>
+                    <li><i class="fab fa-github"></i><span>Github</span></li>
                     
                 </ul>
             </nav>
