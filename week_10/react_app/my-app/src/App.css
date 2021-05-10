@@ -1,0 +1,150 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.747);
+  font-family: "Abel", sans-serif;
+}
+
+.sidebarContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.AboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  background-color: rgb(118, 122, 182);
+  border-radius: 10px;
+  margin: 40px;
+  padding-top: 15px;
+  border: solid 2px;
+  color: rgba(255, 255, 255, 0.747);
+}
+.Sidebar {
+  display: flex;
+  justify-content: flex-start;
+  width: 10%;
+}
+.Nav {
+  display: flex;
+  justify-content: center;
+  /* width: 100%;
+  height: 40%; */
+  background-color: rgb(105, 202, 86);
+}
+.AboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10%;
+}
+.picture {
+  border-radius: 20px;
+  border: solid 3px rgb(245, 163, 41);
+  height: 75%;
+  width: 60%;
+  margin-bottom: 80px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100px;
+  margin-top: 150px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+nav li {
+  height: 45px;
+  position: relative;
+}
+
+nav li a {
+  color: #fff !important;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 45px;
+  padding-left: 25%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s linear;
+  text-decoration: none !important;
+}
+
+nav li:nth-child(1) a {
+  background: #4267b2;
+}
+
+nav li:nth-child(2) a {
+  background: #1da1f2;
+}
+
+nav li:nth-child(3) a {
+  background: #e1306c;
+}
+
+nav li:nth-child(4) a {
+  background: #2867b2;
+}
+
+nav li:nth-child(5) a {
+  background: #333;
+}
+
+nav li:nth-child(6) a {
+  background: #ff0000;
+}
+
+nav li a i {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-size: 15px;
+}
+
+ul li a span {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  z-index: 1;
+  width: 200px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+ul li:hover a span {
+  padding-left: 30%;
+  display: block;
+  font-size: 15px;
+}
