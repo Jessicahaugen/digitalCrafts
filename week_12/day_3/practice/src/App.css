@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.shippingForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.shippingForm input {
+  margin: 0.4rem;
+  padding: 0.7rem;
+  width: 100%;
+}
+.shippingFormContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0.4rem;
+  padding: 3rem;
+}
+
+.shippingInputStreet,
+.shippingInputApt,
+.shippingInputSubmit {
+  grid-column: 1/3;
+}
+
+.shippingFormHeader {
+  font-weight: lighter;
+}
