@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   const dispatch = useDispatch();
   return (
     <div className="App">
-     <h1>{name}</h1> 
+     <h1>{name}</h1>
       <button onClick={() => dispatch({ type: "CHANGE" })}>Change Name</button>
      
     </div>
