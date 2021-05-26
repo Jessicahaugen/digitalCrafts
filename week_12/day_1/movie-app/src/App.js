@@ -1,6 +1,6 @@
 
 import './App.css';
-import MovieResultsContainer from './components/MovieResultsContainer';
+// import MovieResultsContainer from './components/MovieResultsContainer';
 import MovieSearchBar from './components/MovieSearchBar';
 
 function App() {
