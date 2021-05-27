@@ -1,5 +1,6 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
+import {fillArray} from '../src/Action/AppActions'
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <h1>{blankArray.map((p) => (
         <p>{p.name}</p>
       ))}</h1> 
-      <button onClick={() => dispatch({ type: "CHANGE" })}>Add to Array</button>
+      <button onClick={() => fillArray(dispatch)}>Add to Array</button>
      
     </div>
   );

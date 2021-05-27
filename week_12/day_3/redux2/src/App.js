@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch,useSelector } from "react-redux";
+import {changeJesstoJoe} from '../src/Actions/AppActions'
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
      <h1>{name}</h1>
-      <button onClick={() => dispatch({ type: "CHANGE" })}>Change Name</button>
+      <button onClick={() => changeJesstoJoe(dispatch)}>Change Name </button>
      
     </div>
   );

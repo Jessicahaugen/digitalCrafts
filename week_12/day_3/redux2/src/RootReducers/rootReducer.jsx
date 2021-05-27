@@ -1,3 +1,5 @@
+import {CHANGE} from '../ActionTypes/Actions'
+
 const initialState={
     name:"jess"
 
@@ -5,7 +7,7 @@ const initialState={
 
 function rootReducer(state=initialState, action){
     switch(action.type) {
-        case "CHANGE": 
+        case CHANGE: 
             return {name: "joe" }
        
         default:
